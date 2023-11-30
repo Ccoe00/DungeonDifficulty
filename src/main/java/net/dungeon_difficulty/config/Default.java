@@ -34,19 +34,7 @@ public class Default {
                         new Config.AttributeModifier[]{ },
                         dungeonSpawners,
                         0)
-        );
-        dungeonDifficulty.rewards.armor = List.of(
-                createItemModifier(new Config.AttributeModifier[]{
-                        createArmorMultiplier(0.1F),
-                        createHealthBonus(1)
-                })
-        );
-        dungeonDifficulty.rewards.weapons = List.of(
-                createItemModifier(new Config.AttributeModifier[]{
-                        createDamageMultiplier(0.15F, 0.05F),
-                        createPowerMultiplier(0.15F, 0.05F)
-                })
-        );
+       
 
         // Per Player Difficulty
         var perPlayerDifficulty = new Config.PerPlayerDifficulty();
